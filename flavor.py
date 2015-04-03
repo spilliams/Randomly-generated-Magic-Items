@@ -41,7 +41,7 @@ seed()
 dictionary = {}
 list_of_sources=["creators","historicdetails","minorproperties","quirks"]
 for source in list_of_sources:
-    with open ("{}.txt".format(source)) as f:
+    with open ("flavor/{}.txt".format(source)) as f:
         dictionary[source] = f.readlines()
 
 values = {key: chooseValueReroll(key) for key in dictionary}

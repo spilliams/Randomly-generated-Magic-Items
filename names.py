@@ -5,10 +5,10 @@ seed()
 dictionary = {}
 list_of_sources=["concrete_noun","title","adjective","abstract_noun"]
 for source in list_of_sources:
-    with open ("{}.txt".format(source)) as f:
+    with open ("names/{}.txt".format(source)) as f:
         dictionary[source] = f.readlines()
 
-with open ("patterns.txt") as file:
+with open ("names/patterns.txt") as file:
     patterns = file.readlines()
 
 for i in range(0,20):
